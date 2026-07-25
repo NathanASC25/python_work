@@ -1,8 +1,9 @@
 import re
 file = open("nums.txt")
-lines = ""
+nums = list()
 str = "[0-9]+"
 for line in file:
-    lines += line
-arr = re.findall(str, lines)
-print("\n", arr ,"\n")
+    validNums = re.findall(str, line)
+    for num in validNums:
+        nums.append(num)
+print("\n", nums ,"\n")

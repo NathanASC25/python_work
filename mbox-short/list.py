@@ -1,4 +1,4 @@
-fname = input("Enter file name: ")
+name = input("Enter file name: ")
 if len(fname) < 1:
     fname = "mbox-short.txt"
 
